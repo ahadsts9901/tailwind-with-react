@@ -1,0 +1,20 @@
+create a react app
+
+run these commands
+    npm install -D tailwindcss
+    npx tailwindcss init
+
+in App.css paste this code
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+run this command in src folder
+    npx tailwindcss -i ./src/App.css -o ./src/tailwind.css --watch
+
+paste this code in 
+    tailwind.config.js ====> line number 3
+        content: ["./src/*.jsx", "./src/components/*.jsx", "./src/pages/*.jsx", "./*.html"],
+
+import tailwind.css file in your files and use
+    import "./tailwind.css"
